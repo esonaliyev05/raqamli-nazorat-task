@@ -8,6 +8,7 @@ export default function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
+          
           <Route path="/" element={<DashboardPage />} />
           <Route path="/create" element={<StatementFormPage />} />
           <Route path="/edit/:id" element={<StatementFormPage />} />

@@ -14,9 +14,14 @@ const initialState: StatementsState = {
   list: [],
   current: null,
   loading: false,
+  
   saveLoading: false,
   error: '',
 }
+
+
+
+
 
 export const fetchStatements = createAsyncThunk('statements/fetchStatements', async () => {
   return await getStatements()
@@ -40,6 +45,13 @@ export const updateStatementAction = createAsyncThunk(
 export const removeStatementAction = createAsyncThunk('statements/removeStatement', async (id: number) => {
   return await removeStatement(id)
 })
+
+
+
+
+
+
+
 
 const statementsSlice = createSlice({
   name: 'statements',

@@ -1,8 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import statementsReducer from './statementsSlice'
 
+
+
+
 export const store = configureStore({
   reducer: {
+
+    
     statements: statementsReducer,
   },
 })
